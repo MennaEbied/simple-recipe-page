@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+/*RESET*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+font-family: Outfit;
+font-size:50px;
+background-color: hsl(330, 100%, 98%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h1{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+h2{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 10px;
+}
+h1,
+.titles{
+    font-family: Young Serif;
+}
+p{
+    color: hsl(30, 10%, 34%);
+}
+p,
+h1{
+    margin-left: 45px;
+}
+
+/* CHANGING COLOR OF BULLETs */
+li::marker{
+    color:hsl(14, 45%, 36%);
+}
+ol,
+ul,
+li{
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-bottom: 40px;
+}
+strong{
+    color:hsl(30, 10%, 34%);
+    font-weight: 800;
+}
+img{
+    display: block;
+    width: 80%;
+    border-radius: 30px;
+}
+
+/* SPACING BETWEEN TABLE ROWS */
+table {
+    border-collapse: collapse;
+    width: 80%; 
+}
+th, td {
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+}
+tr:first-child {
+    border-top: none;
+}
+footer{
+    margin-top: 45px;
+}
+td{
+    padding-bottom: 35px;
+}
+
+.titles{
+    padding-left: 35px;
+}
+.titles,
+.column{
+    color: hsl(14, 45%, 36%);
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+.container{
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 150px;
+    max-width: 650px;
+    font-size: x-large;
+
+}
+.preparation-container{
+    background-color:hsl(330, 100%, 98%);
+    margin: 25px;
+    padding: 30px;
+    border-radius:35px;
+    margin-bottom:20px;
+}
+.nutrition-info{
+    margin-bottom: 25px;
+}
+.table{
+    margin-left: 90px;
+}
+.column{
+    padding-left: 250px;
+    font-weight: 600;
+}
+.attribution { font-size: 25px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+/* TABLET */
+@media(min-width:768px){
+    body{
+        font-size: 25px;
+    }
+    .container{
+        width: 80%;
+    }
+    .attribution{
+        font-size: 15px;
+    }
+
+}
+
+
+/* MOBILE */
+@media (min-width:375px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: smaller;
+    }
+    .container{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    .table{
+        margin-left: 30px;
+    }
+    .column{
+        padding-left: 40px;
+    }
+    .titles{
+        margin-left: 5px;
+    }
+    p{
+        margin-left: 15px;
+    }
+    
+}
